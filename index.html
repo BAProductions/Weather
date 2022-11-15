@@ -1,1 +1,167 @@
-HI
+<head><style type="text/css">.mui-textfield.mui-textfield--float-label > label {-webkit-transition:all .15s ease-out;-moz-transition:all .15s ease-out;-o-transition:all .15s ease-out;transition:all .15s ease-out;}</style><style type="text/css">@keyframes mui-btn-inserted{from{transform:none;}to{transform:none;}}.mui-btn{animation-duration:0.0001s;animation-name:mui-btn-inserted;}@keyframes mui-dropdown-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-dropdown-inserted;}@keyframes mui-btn-inserted,mui-dropdown-inserted{from{transform:none;}to{transform:none;}}.mui-btn[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-btn-inserted,mui-dropdown-inserted;}@keyframes mui-tab-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="tab"]{animation-duration:0.0001s;animation-name:mui-tab-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > input{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > textarea{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-select-inserted{from{transform:none;}to{transform:none;}}.mui-select > select{animation-duration:0.0001s;animation-name:mui-select-inserted;}@keyframes mui-node-inserted{from{transform:none;}to{transform:none;}}.mui-select > select ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-inserted;}@keyframes mui-node-disabled{from{transform:none;}to{transform:none;}}.mui-select > select:disabled ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-disabled;}</style>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+      <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/elad2412/the-new-css-reset/main/css/reset.css">
+      <link rel="stylesheet" type="text/css" href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css">
+      <script type="text/javascript" src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+
+  <style id="compiled-css" type="text/css">
+    
+.round {
+  border-radius:10px;
+}
+
+.uppercase {
+  text-transform:uppercase;
+}
+
+.clear {
+  clear: left;
+}
+
+.icon_margin_10 {
+  margin-right: 10px !important;
+  padding-right: 10px !important;
+}
+
+.icon_center_horizontal {
+  margin: auto;
+}
+
+.font_14 {
+  font-size: 14px;
+}
+
+.font_24 {
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center {
+  height: 128px;
+  line-height: 50px;
+  text-align: center !important;
+}
+
+.center_horizontal {
+  text-align: center !important;
+  margin: auto !important;
+}
+
+.icon_32 {
+  width: 36px;
+  height: auto;
+}
+
+.icon_64 {
+  width: 46px;
+  height: auto;
+}
+
+.icon_128 {
+  width: 128px;
+  height: auto;
+}
+
+.panel_current {
+  width: auto;
+  height: 200px;
+  overflow: hidden;
+}
+
+.panel_current .mui-row span {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  font-size: 200%;
+}
+
+.panel_current .mui-row #icon {
+  display: block;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  font-size: 200%;
+}
+
+.panel_hourly {
+  display: flex;
+  width: auto;
+  height: 128px;
+  overflow-y: hidden;
+}
+
+.panel_hourly #hw_item {
+  background: rgba(0.0, 0.0, 0.0, 0.2);
+  display: block !important;
+  float: left !important;
+  width: 64px !important;
+  margin: 0px 10px;
+}
+
+.panel_hourly #hw_item * {
+  display: block !important;
+  margin: auto !important;
+}
+
+.panel_daily {
+  width: auto;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+
+    /* EOS */
+  </style>
+  <title>Weather</title>
+</head>
+    <body>
+    <div class="mui-container">
+      <div class="mui-appbar">
+      </div>
+      <div class="mui-panel ">
+        <div id="current" class="mui-panel panel_current round">
+          <div class="mui-row">
+            <div class="mui-col-xs-12 mui-col-md-12">
+              <span id="location">Miami, FL</span>
+            </div>
+          </div>
+          <div class="mui-row">
+            <div class="mui-col-xs-4 mui-col-md-4">
+              <img id="icon" class="icon_128" src="" />
+            </div>
+            <div class="mui-col-xs-4 mui-col-md-4">
+              <span id="temp">80&deg;</span>
+              <span id="description">Sunny</span>
+            </div>
+          </div>
+        </div>
+<!-- 
+        <div id="map" class="mui-panel panel_hourly round">
+        </div> -->
+        
+        <div id="hourly" class="mui-panel panel_hourly round">
+        </div>
+        
+        <div class="mui-panel panel_daily round">
+          <div id="daily" class="mui-container-fluid">
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
